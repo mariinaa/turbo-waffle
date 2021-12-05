@@ -77,11 +77,13 @@ public class BattleLogic : MonoBehaviour
         if (currentHP == 10 || currentHP > 10)
         {
             Debug.Log("YOU WIN!");
+            //maybe a scene change here?
         }
 
         else if (currentHP == 0 || currentHP < 0)
         {
             Debug.Log("Try again :(");
+            //maybe a scene change here?
         }
 
     }
