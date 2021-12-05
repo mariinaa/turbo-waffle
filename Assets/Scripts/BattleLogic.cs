@@ -13,6 +13,8 @@ public class BattleLogic : MonoBehaviour
     public float startingHP = 5F;
     public float currentHP;
 
+    public HealthBar HPBar;
+    public HealthBar EnemyHPbar;
     //Battle impact variable declaration
 
     public float goodActionImpact = 2.5F;
@@ -23,6 +25,7 @@ public class BattleLogic : MonoBehaviour
     public string[] goodActionList = new string[] { "good1", "good2", "good3" };
     private string[] neutralActionList = new string[] { "neutral1", "neutral2", "neutral3" };
 
+
     //Button on click declaration
 
     //public Button actionSelected;
@@ -32,7 +35,8 @@ public class BattleLogic : MonoBehaviour
     void Start()
     {
         currentHP = startingHP;
-
+        HPBar.setMaxHealth(fullHP, startingHP);
+        EnemyHPbar.setMaxHealth(fullHP, startingHP);
         Debug.Log(currentHP);
 
         //Button btn = actionSelected.GetComponent<Button>();
@@ -48,28 +52,28 @@ public class BattleLogic : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("Move 1 selected"); //good move
-            currentHP += goodActionImpact;
+            goodAction();            
             Debug.Log("current HP: " + currentHP);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2)) //good move
         {
             Debug.Log("Move 2 selected");
-            currentHP += goodActionImpact;
+            goodAction();
             Debug.Log("current HP: " + currentHP);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3)) //neutral move
         {
             Debug.Log("Move 3 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha4)) //neutral move
         {
             Debug.Log("Move 4 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
         }
 
@@ -86,6 +90,19 @@ public class BattleLogic : MonoBehaviour
             //maybe a scene change here?
         }
 
+
+    }
+
+    public void goodAction ()
+    {
+        currentHP += goodActionImpact;
+        EnemyHPbar.setHealth(currentHP);
+    }
+
+    public void neutralAction ()
+    {
+        currentHP += neutralActionImpact;
+        EnemyHPbar.setHealth(currentHP);
     }
 
 
