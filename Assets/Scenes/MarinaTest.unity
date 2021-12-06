@@ -2764,14 +2764,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d8e6bf214004e73a6a189cbf8da858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHP: 10
+  fullHP: 100
   noHP: 0
-  startingHP: 5
+  startingHP: 50
   currentHP: 0
-  goodActionImpact: 2.5
-  neutralActionImpact: -1.7
+  goodActionImpact: 17
+  neutralActionImpact: -13
   goodActionList:
-  - good11
+  - good1
   - good2
   - good3
 --- !u!4 &1854476482
