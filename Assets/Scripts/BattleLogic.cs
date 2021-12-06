@@ -22,7 +22,8 @@ public class BattleLogic : MonoBehaviour
 
     public string winOrLose;
 
-    public GameObject sceneLoader; 
+    public GameObject sceneLoader;
+    public GameObject enemyHPbar;
 
 
 
@@ -43,7 +44,7 @@ public class BattleLogic : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("Move 1 selected"); //good move
-            currentHP += goodActionImpact;
+            goodAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
         }
@@ -51,7 +52,7 @@ public class BattleLogic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha2)) //neutral move
         {
             Debug.Log("Move 2 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
         }
@@ -59,7 +60,7 @@ public class BattleLogic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3)) //neutral move
         {
             Debug.Log("Move 3 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
         }
@@ -67,7 +68,7 @@ public class BattleLogic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha4)) //neutral move
         {
             Debug.Log("Move 4 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
         }
@@ -75,7 +76,7 @@ public class BattleLogic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha5)) //good move
         {
             Debug.Log("Move 5 selected");
-            currentHP += goodActionImpact;
+            goodAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
         }
@@ -83,7 +84,7 @@ public class BattleLogic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha6)) //neutral move
         {
             Debug.Log("Move 6 selected");
-            currentHP += neutralActionImpact;
+            neutralAction();
             Debug.Log("current HP: " + currentHP);
             CheckEnding();
 
@@ -122,9 +123,17 @@ public class BattleLogic : MonoBehaviour
         }
     }
 
-        
+     void goodAction()
+    {
+        currentHP += goodActionImpact;
+        enemyHPbar.GetComponent<HealthBar>().setHealth(currentHP);
+    }   
 
-    
+    void neutralAction()
+    {
+        currentHP += neutralActionImpact;
+        enemyHPbar.GetComponent<HealthBar>().setHealth(currentHP);
+    }
 
 
 
