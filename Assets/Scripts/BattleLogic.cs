@@ -13,7 +13,7 @@ public class BattleLogic : MonoBehaviour
     public float startingHP = 5F;
     public float currentHP;
 
-    public HealthBar HPBar;
+    public HealthBar HPBar = GameObject.FindGameObjectWithTag("HP Bar").GetComponent<HPBar>;
     public HealthBar EnemyHPbar;
     //Battle impact variable declaration
 
