@@ -13,6 +13,10 @@ public class BattleLogic : MonoBehaviour
     public float startingHP = 50F;
     public float currentHP;
 
+    //No double moves variable declaration
+
+    public string lastMove;
+
     //Battle impact variable declaration
 
     public float goodActionImpact = 17F;
@@ -43,50 +47,101 @@ public class BattleLogic : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log("Move 1 selected"); //good move
-            goodAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move1")
+            {
+                Debug.Log("Move 1 selected"); //good move
+                goodAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move1";
+                CheckEnding();
+            }
+            else
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2)) //neutral move
         {
-            Debug.Log("Move 2 selected");
-            neutralAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move2")
+            {
+                Debug.Log("Move 2 selected");
+                neutralAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move2";
+                CheckEnding();
+            }
+            else
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3)) //neutral move
         {
-            Debug.Log("Move 3 selected");
-            neutralAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move3")
+            {
+                Debug.Log("Move 3 selected");
+                neutralAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move3";
+                CheckEnding();
+            }
+            
+            else
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha4)) //neutral move
         {
-            Debug.Log("Move 4 selected");
-            neutralAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move4")
+            {
+                Debug.Log("Move 4 selected");
+                neutralAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move4";
+                CheckEnding();
+            }
+            else
+
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha5)) //good move
         {
-            Debug.Log("Move 5 selected");
-            goodAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move5")
+            {
+                Debug.Log("Move 5 selected");
+                goodAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move5";
+                CheckEnding();
+            }
+            else
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha6)) //neutral move
         {
-            Debug.Log("Move 6 selected");
-            neutralAction();
-            Debug.Log("current HP: " + currentHP);
-            CheckEnding();
+            if (lastMove != "Move6")
+            {
+                Debug.Log("Move 6 selected");
+                neutralAction();
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move6";
+                CheckEnding();
+            }
+            
+            else
+            {
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
 
         }
 
