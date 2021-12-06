@@ -18,12 +18,11 @@ public class BattleLogic : MonoBehaviour
     public float goodActionImpact = 17F;
     public float neutralActionImpact = -13F;
 
-    //Battle moveset variable declaration -- MIGHT NOT ACTUALLY NEED THIS
+    //Ending condition declaration
 
-    public string[] goodActionList = new string[] { "good1", "good2", "good3" };
-    private string[] neutralActionList = new string[] { "neutral1", "neutral2", "neutral3" };
+    public string winOrLose;
 
-
+    public GameObject sceneLoader; 
 
 
 
@@ -33,10 +32,7 @@ public class BattleLogic : MonoBehaviour
         currentHP = startingHP;
 
         Debug.Log("the current HP is: " + currentHP);
-
-        //Button btn = actionSelected.GetComponent<Button>();
-        //btn.onClick.AddListener(OnMouseDown);
-
+        //sceneLoader.GetComponent<SceneLoader>().LoadEndingScene(winOrLose);
     }
 
 
@@ -107,14 +103,17 @@ public class BattleLogic : MonoBehaviour
         if (currentHP == fullHP || currentHP > fullHP)
         {
             Debug.Log("YOU WIN!");
-            //maybe a scene change here?
+            winOrLose = "win";
+            sceneLoader.GetComponent<SceneLoader>().LoadEndingScene(winOrLose); //execute LoadEndingScene function from SceneLoader.cs *******??????
         }
 
         else if (currentHP == noHP || currentHP < noHP)
             {
             Debug.Log("Try again :(");
-            //maybe a scene change here?
-            }
+            winOrLose = "lose";
+            sceneLoader.GetComponent<SceneLoader>().LoadEndingScene(winOrLose); //execute LoadEndingScene function from SceneLoader.cs *******??????
+
+        }
 
         else
         {
@@ -132,5 +131,9 @@ public class BattleLogic : MonoBehaviour
 }
 
 
-    
 
+
+//Battle moveset variable declaration -- MIGHT NOT ACTUALLY NEED THIS
+
+//public string[] goodActionList = new string[] { "good1", "good2", "good3" };
+//private string[] neutralActionList = new string[] { "neutral1", "neutral2", "neutral3" };
