@@ -49,7 +49,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 1 selected"); //good move
             currentHP += goodActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2)) //neutral move
@@ -57,7 +57,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 2 selected");
             currentHP += neutralActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3)) //neutral move
@@ -65,7 +65,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 3 selected");
             currentHP += neutralActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha4)) //neutral move
@@ -73,7 +73,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 4 selected");
             currentHP += neutralActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha5)) //good move
@@ -81,7 +81,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 5 selected");
             currentHP += goodActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha6)) //neutral move
@@ -89,7 +89,7 @@ public class BattleLogic : MonoBehaviour
             Debug.Log("Move 6 selected");
             currentHP += neutralActionImpact;
             Debug.Log("current HP: " + currentHP);
-            checkEnding();
+            CheckEnding();
 
         }
 
