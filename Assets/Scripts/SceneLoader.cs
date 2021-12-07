@@ -9,14 +9,14 @@ public class SceneLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        LoadEndingScene();
-    //    }
-    //}
+    //Update is called once per frame
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "TitleScreen" && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("BattleScene");
+        }
+    }
 
     public void LoadEndingScene(string winOrLose)
     {
