@@ -29,6 +29,10 @@ public class BattleLogic : MonoBehaviour
     public GameObject sceneLoader;
     public GameObject enemyHPbar;
 
+    //Turn feedback text declaration
+
+    public Text txt;
+
 
 
     // Start is called before the first frame update
@@ -51,6 +55,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 1 selected"); //good move
                 goodAction();
+                txt.text = "It was super effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move1";
                 CheckEnding();
@@ -67,6 +72,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 2 selected");
                 neutralAction();
+                txt.text = "It was not effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move2";
                 CheckEnding();
@@ -83,6 +89,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 3 selected");
                 neutralAction();
+                txt.text = "It was not effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move3";
                 CheckEnding();
@@ -100,6 +107,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 4 selected");
                 neutralAction();
+                txt.text = "It was not effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move4";
                 CheckEnding();
@@ -117,6 +125,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 5 selected");
                 goodAction();
+                txt.text = "It was super effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move5";
                 CheckEnding();
@@ -133,6 +142,7 @@ public class BattleLogic : MonoBehaviour
             {
                 Debug.Log("Move 6 selected");
                 neutralAction();
+                txt.text = "It was not effective!";
                 Debug.Log("current HP: " + currentHP);
                 lastMove = "Move6";
                 CheckEnding();
