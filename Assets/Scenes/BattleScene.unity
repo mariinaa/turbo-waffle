@@ -455,8 +455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.3, y: 3.6}
-  m_SizeDelta: {x: 785.9393, y: 60}
+  m_AnchoredPosition: {x: 3.72, y: 3.6}
+  m_SizeDelta: {x: 785.0789, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517405445
 MonoBehaviour:
@@ -484,14 +484,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "[1] Feed                 [2] Say \"Aww\"      [3] Give Flower \n[4] Boop
-    Nose     [5] Pat Head          [6] Offer Coffee "
+  m_Text: '[1] Feed                   [3] Boop Nose      [5] Give Flower        [7]
+    Sing Happy Song
+
+    [2] Offer Water     [4] Pat Head        [6] Give Seashell    
+    [8] Sing Sad Song'
 --- !u!222 &517405446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1568,13 +1571,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Post-turn feedback will be here
+  m_Text: '[Post-turn feedback will be here]'
 --- !u!222 &1438040890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1597,10 +1600,10 @@ RectTransform:
   m_Father: {fileID: 1929327124}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271, y: -27}
-  m_SizeDelta: {x: 250.82274, y: 81.544624}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 16.399994, y: 277.8}
+  m_SizeDelta: {x: -533.6542, y: 68.40972}
   m_Pivot: {x: 0.56188875, y: 0.5}
 --- !u!1 &1488215833
 GameObject:

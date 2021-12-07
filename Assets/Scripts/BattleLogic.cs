@@ -62,6 +62,7 @@ public class BattleLogic : MonoBehaviour
             }
             else
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
         }
@@ -79,6 +80,7 @@ public class BattleLogic : MonoBehaviour
             }
             else
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
         }
@@ -97,6 +99,7 @@ public class BattleLogic : MonoBehaviour
             
             else
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
         }
@@ -115,6 +118,7 @@ public class BattleLogic : MonoBehaviour
             else
 
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
         }
@@ -132,6 +136,7 @@ public class BattleLogic : MonoBehaviour
             }
             else
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
         }
@@ -150,13 +155,54 @@ public class BattleLogic : MonoBehaviour
             
             else
             {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
                 Debug.Log("You can't play the same move twice. Please select another move.");
             }
 
         }
 
-        
-      
+        else if (Input.GetKeyDown(KeyCode.Alpha7)) //neutral move
+        {
+            if (lastMove != "Move7")
+            {
+                Debug.Log("Move 7 selected");
+                neutralAction();
+                txt.text = "It was not effective!";
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move7";
+                CheckEnding();
+            }
+
+            else
+            {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
+
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha8)) //good move
+        {
+            if (lastMove != "Move8")
+            {
+                Debug.Log("Move 8 selected");
+                goodAction();
+                txt.text = "It was super effective!";
+                Debug.Log("current HP: " + currentHP);
+                lastMove = "Move8";
+                CheckEnding();
+            }
+
+            else
+            {
+                txt.text = "Can't play the same move twice in a row. Please select again.";
+                Debug.Log("You can't play the same move twice. Please select another move.");
+            }
+
+        }
+
+
+
 
 
 
