@@ -345,7 +345,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 797ebda38f95772468a1fb35d1b766ba, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a44fe9a8b3631c48ba33ee1f2d99d98, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1025,9 +1025,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THIS WAFFLE CHOMPER HAS ESCAPED.
+  m_Text: 'THE WAFFLE CHOMPER HAS ESCAPED.
 
-    TRY AGAIN - YOU GOT THIS!'
+    TRY AGAIN - YOU GOT THIS!                                                                     
+    > Press ''SPACE'' to play again'
 --- !u!222 &1221360956
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1094,7 +1095,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e9703338d3d59fc44a77541d4f86a11b, type: 3}
-    m_FontSize: 18
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1105,7 +1106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HP
+  m_Text: TRUST
 --- !u!222 &1245373077
 CanvasRenderer:
   m_ObjectHideFlags: 0
