@@ -16,6 +16,16 @@ public class SceneLoader : MonoBehaviour
         {
             SceneManager.LoadScene("BattleScene");
         }
+
+        else if (SceneManager.GetActiveScene().name == "Win" && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
+
+        else if (SceneManager.GetActiveScene().name == "Lose" && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
     }
 
     public void LoadEndingScene(string winOrLose)
