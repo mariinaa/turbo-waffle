@@ -188,7 +188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00024414, y: -142.79}
+  m_AnchoredPosition: {x: 0.00024414, y: -187}
   m_SizeDelta: {x: 799.99976, y: 80.0347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137669284
@@ -345,7 +345,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a44fe9a8b3631c48ba33ee1f2d99d98, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fc18a6c600c55437896fea594afec69d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -548,10 +548,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NAME
+  m_Text: HUNGRY BOI
 --- !u!222 &381076331
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -668,8 +668,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677231409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 47.4, z: 86}
-  m_LocalScale: {x: 309.6447, y: 205.97519, z: 172.208}
+  m_LocalPosition: {x: 1, y: 46, z: 86}
+  m_LocalScale: {x: 410.2483, y: 272.89655, z: 228.15837}
   m_Children: []
   m_Father: {fileID: 1952631089}
   m_RootOrder: 0
@@ -1027,7 +1027,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'THE WAFFLE CHOMPER HAS ESCAPED.
 
-    TRY AGAIN - YOU GOT THIS!                                                                     
+    TRY AGAIN - YOU GOT THIS!                                                                
     > Press ''SPACE'' to play again'
 --- !u!222 &1221360956
 CanvasRenderer:
@@ -1296,7 +1296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230.9, y: 131.79}
+  m_AnchoredPosition: {x: -230.9, y: 165}
   m_SizeDelta: {x: 274.55624, y: 68.6189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326775170
@@ -1535,10 +1535,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lvl
+  m_Text: Lvl 5
 --- !u!222 &1710978401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1574,14 +1574,14 @@ RectTransform:
   m_GameObject: {fileID: 1921328527}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.04, y: 1.04, z: 1.04}
   m_Children: []
   m_Father: {fileID: 1952631089}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00024414, y: 32}
+  m_AnchoredPosition: {x: -15, y: 18}
   m_SizeDelta: {x: 240.99896, y: 198.9062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921328529
@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 660a2b7f6d76b1a4ebceff8c476d10d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cabf125c79e7d4534a323879bd7c4fd1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
